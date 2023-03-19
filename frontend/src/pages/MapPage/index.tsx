@@ -1,5 +1,5 @@
 import React from "react";
-import { Map, Marker } from "pigeon-maps";
+import { Map, Marker, Point } from "pigeon-maps";
 import "./style.scss";
 import { useAppSelector } from "../../store";
 import { Navigate } from "react-router-dom";
@@ -13,7 +13,7 @@ export default function MapPage() {
     return <Navigate to="/" />;
   }
 
-  const defaultCenter = [myLocation.lat, myLocation.lng];
+  const defaultCenter: Point = [myLocation.lat, myLocation.lng];
 
   return (
     <div className="map">

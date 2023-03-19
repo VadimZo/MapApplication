@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux/es/exports";
 import { useNavigate } from "react-router-dom";
 import { RootState, useAppSelector } from "../../store";
-import { connectSocketIOServer, proceedWithLogin } from "../../utils/socket";
+import { proceedWithLogin, connectSocketIOServer } from "../../utils/socket";
 import { setMyLocation } from "../MapPage/mapSlice";
 
 const locationOptions = {
